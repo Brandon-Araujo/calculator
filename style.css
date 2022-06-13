@@ -1,0 +1,151 @@
+html {
+    height: 100%;
+    background-color:rgb(33, 31, 52);
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-content: center; 
+}
+
+.calculator-container {
+    display: grid;
+    width: 400px;
+    height: 600px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 50px;
+    background-color:hsla(258,61%,19%,1);
+    background-image:
+        radial-gradient(at 0% 80%, hsla(268,100%,21%,1) 0px, transparent 50%),
+        radial-gradient(at 30% 70%, rgb(26, 12, 43) 0px, transparent 50%),
+        radial-gradient(at 0% 23%, hsla(262,78%,40%,1) 0px, transparent 50%),
+        radial-gradient(at 23% 40%, rgb(26, 12, 48) 0px, transparent 50%),
+        radial-gradient(at 100% 9%, rgb(12, 12, 127) 0px, transparent 50%),
+        radial-gradient(at 89% 76%, hsla(248,78%,40%,1) 0px, transparent 50%),
+        radial-gradient(at 89% 30%, hsla(132,78%,40%,1) 0px, transparent 50%),
+        radial-gradient(at 85% 100%, hsla(350,78%,40%,1) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, hsla(289,78%,40%,1) 0px, transparent 50%);
+    border: solid black 15px;
+    border-radius: 10px;
+}
+
+.display-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.display {
+    justify-self: center;
+    align-self: end;
+    border-radius: 5px;
+    color: red;
+}
+
+.display-line {
+    justify-self: center;
+    align-self: center;
+    width: 345px;
+    height: 3px;
+    background-image: linear-gradient(90deg, orange, rgb(255, 132, 0), red);
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "blank blank clear divide"
+        "seven eight nine multiply"
+        "four five six subtract"
+        "one two three add"
+        "zero decimal equals equals";
+    margin: 10px;
+}
+
+.title-div {
+    grid-area: blank;
+    height: auto;
+    width: auto;
+}
+
+.button {
+    height: 50px;
+    width: 70px;
+    border-radius: 5px;
+    justify-self: center;
+    align-self: center;
+    border: none;
+    background-color: rgba(174, 174, 174, 0.3);
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.six {
+    grid-area: six;
+}
+
+.five {
+    grid-area: five;
+}
+
+.four {
+    grid-area: four;
+}
+
+.three {
+    grid-area: three;
+}
+
+.two {
+    grid-area: two;
+}
+
+.one {
+    grid-area: one;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.multiply {
+    grid-area: multiply;
+}
+
+.subtract {
+    grid-area: subtract;
+}
+
+.add {
+    grid-area: add;
+}
+
+.decimal {
+    grid-area: decimal;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.equals {
+    grid-area: equals;
+    width: 150px;
+}
+
